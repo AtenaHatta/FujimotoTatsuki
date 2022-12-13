@@ -1,0 +1,144 @@
+body {
+  background-color: #5f9c7b;
+  color: aliceblue;
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: 'Knewave', cursive;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/*=========================
+   header
+=========================*/
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10001;
+}
+
+.top-container{
+  display: flex;
+  justify-content: space-between;
+  background-color: #404140;
+  height:10%;
+  padding:0 5%;
+}
+
+.img-hand{
+  width: 19%;
+  position: absolute;
+  left: 77%;
+  top: 100%;
+}
+
+.list-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li{
+  margin-right: 10%;
+  list-style:none;
+  font-size: 1.5rem;
+}
+
+a:hover{
+  color: #ca302d;
+}
+
+a:active{
+  color: #ff0202;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1{
+  margin: 1%;
+  text-shadow: 0.1rem 0.1rem #5e5e5e;
+  color: #c95353;
+  font-family: 'Lobster', cursive;
+}
+
+h2{
+  text-shadow: 0.1rem 0.2rem #747272;
+  color: #8b2e2e;
+  font-family: 'Lobster', cursive;
+}
+
+span{
+  color: #ca302d;
+}
+/*=========================
+   middle-container1
+=========================*/
+.middle-container1{
+  height: 20rem;
+  width: 100%;
+  text-align: center;
+  padding-top: 5rem;
+  
+}
+
+.img-makima{
+  width:8%;
+  position: absolute;
+  left: 46%;
+  z-index: 1000;
+}
+
+.img-chain-l{
+  width:50%;
+  position: absolute;
+  right: 50%;
+  bottom: 35%;
+  filter: invert(10%);
+}
+
+.img-chain-r{
+  width:50%;
+  position: absolute;
+  left: 50%;
+  bottom: 35%;
+  filter: invert(10%);
+} 
+
+.box-section{
+  background-color: hsl(0, 0%, 97%, 0.3);
+  border-radius: 1rem;
+  margin: 5% 15%;
+  padding: 2%;
+  height: 20rem;
+  color: #f8f8f8;
+}
+
+.bg-img1{
+  background-image: url(../img/bloody1.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  background-position:  top 10%;
+}
+
+.bg-img2{
+  background-image: url(../img/bloody2.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:  right 20% bottom 30%;
+  width: 100%;
+}
+
+/*=========================
+   footer
+=========================*/
+footer{
+  background-color: #404140;
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
