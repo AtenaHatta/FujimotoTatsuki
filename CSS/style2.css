@@ -1,10 +1,17 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
   background-color: #5f9c7b;
   color: aliceblue;
   margin: 0 auto;
   min-height: 100vh;
-  font-family: 'Knewave', cursive;
-  font-family: 'PT Sans', sans-serif;
+  text-shadow: 0.1rem 0.2rem #474b4a;
+  font-family: 'Lobster', cursive;
 }
 
 /*=========================
@@ -19,16 +26,9 @@ header {
 .top-container{
   display: flex;
   justify-content: space-between;
-  background-color: #404140;
+  background-color: #944d4d;
   height:10%;
   padding:0 5%;
-}
-
-.img-hand{
-  width: 19%;
-  position: absolute;
-  left: 77%;
-  top: 100%;
 }
 
 .list-box{
@@ -44,11 +44,11 @@ li{
 }
 
 a:hover{
-  color: #ca302d;
+  color: #51b881;
 }
 
 a:active{
-  color: #ff0202;
+  color: #15e676;
 }
 
 a {
@@ -58,36 +58,36 @@ a {
 
 h1{
   margin: 1%;
-  text-shadow: 0.1rem 0.1rem #5e5e5e;
-  color: #c95353;
+  text-shadow: 0.1rem 0.2rem #616060;
+  color: #5ebb89;
   font-family: 'Lobster', cursive;
 }
 
 h2{
-  text-shadow: 0.1rem 0.2rem #747272;
-  color: #8b2e2e;
+  text-shadow: 0.1rem 0.2rem #474747;
+  color: #b64e4e;
   font-family: 'Lobster', cursive;
 }
 
 span{
-  color: #ca302d;
+  color: #51b881;
 }
+
 /*=========================
-   middle-container1
+   middle-container
 =========================*/
-.middle-container1{
-  height: 20rem;
+.middle-container{
+  height: 50%;
   width: 100%;
   text-align: center;
   padding-top: 5rem;
-  
 }
 
 .img-makima{
-  width:8%;
+  width:10%;
   position: absolute;
-  left: 46%;
-  z-index: 1000;
+  left: 45%;
+  top: -70%;
 }
 
 .img-chain-l{
@@ -106,13 +106,19 @@ span{
   filter: invert(10%);
 } 
 
+/*=========================
+  box-section
+=========================*/
 .box-section{
   background-color: hsl(0, 0%, 97%, 0.3);
   border-radius: 1rem;
   margin: 5% 15%;
   padding: 2%;
-  height: 20rem;
+  margin-top: 15%;
+  height: 100%;
   color: #f8f8f8;
+  position: relative;
+  text-shadow: none;
 }
 
 .bg-img1{
@@ -135,10 +141,41 @@ span{
    footer
 =========================*/
 footer{
-  background-color: #404140;
+  background-color: #b64e4e;
   height: 3rem;
   width: 100%;
   text-align: center;
   padding: 0.5rem;
 }
 
+/*=========================
+   Responsive design
+=========================*/
+@media screen and (max-width: 764px) {
+.middle-container{
+  height: 10rem;
+ }
+ 
+ .img-makima{
+  width:25%;
+  position: absolute;
+  left: 40%;
+  top: -15%;
+}
+
+ .img-chain-l{
+  width:50%;
+  position: absolute;
+  right: 50%;
+  top: 22%;
+  filter: invert(10%);
+}
+
+.img-chain-r{
+  width:50%;
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  filter: invert(10%);
+ } 
+}
